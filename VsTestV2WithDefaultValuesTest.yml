@@ -1,17 +1,7 @@
-# Starter pipeline
-
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-
-# Add steps that build, run tests, deploy, and more:
-
-# https://aka.ms/yaml
-
+# The objective is to perform VSTESTV2 with default values
 
 trigger:
-
 - master
-
-
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
@@ -25,5 +15,4 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       vsTestVersion: 'toolsInstaller'
-
-        
+      configuration: '$(BuildConfiguration)'
