@@ -15,4 +15,3 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       vsTestVersion: 'toolsInstaller'
-      configuration: '$(BuildConfiguration)'
