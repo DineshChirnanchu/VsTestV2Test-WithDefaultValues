@@ -1,1 +1,0 @@
-FOR /F "tokens=3,4" %%i in ('query session') do @if "%%j"=="Active" logoff %%i
