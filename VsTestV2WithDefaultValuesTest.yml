@@ -15,9 +15,10 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: |
-      **\*test.dll
-      !**\*TestAdapter.dll
-      !**\obj\**
+        **\*test.dll
+        !**\*TestAdapter.dll
+        !**\obj\**
       searchFolder: '$(System.DefaultWorkingDirectory)\'
       vsTestVersion: 'toolsInstaller'
+      
 
